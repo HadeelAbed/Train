@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <a href="Task1/index.html">Task1</a>
-  </body>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة مشاريع هديل</title>
+  <link rel="stylesheet" href="style.css"> <!-- رابط للستايل العام -->
+  <style>
+    body {
+      padding: 30px;
+      background-color: #f4f6f8;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0ea5e9;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: #fff;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #0ea5e9;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .project-card a:hover {
+      background-color: #0284c7;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>لوحة مشاريع هديل</h1>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>مشروع 1</h3>
+      <p>وصف سريع للمشروع.</p>
+      <a href="project1/index.html">اذهب للمشروع</a>
+    </div>
+    <div class="project-card">
+      <h3>مشروع 2</h3>
+      <p>وصف سريع للمشروع.</p>
+      <a href="project2/index.html">اذهب للمشروع</a>
+    </div>
+    <div class="project-card">
+      <h3>مشروع 3</h3>
+      <p>وصف سريع للمشروع.</p>
+      <a href="project3/index.html">اذهب للمشروع</a>
+    </div>
+    <!-- اضيفي هنا أي مشاريع جديدة بنفس النمط -->
+  </div>
+
+</body>
 </html>
